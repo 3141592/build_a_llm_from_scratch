@@ -4,11 +4,13 @@ This respoitory includes the code from my working through the book to build an L
 
 ## Understanding large language models
 
+### 03-06-2026
+
+Starting 2.3 Converting tokens into token IDs
+
 ### 03-05-2026
 
 2.2 Tokenizing text
-
-
 
 ### 03-04-2026
 
