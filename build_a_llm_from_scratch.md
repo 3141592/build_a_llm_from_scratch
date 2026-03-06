@@ -4,6 +4,12 @@ This respoitory includes the code from my working through the book to build an L
 
 ## Understanding large language models
 
+### 03-05-2026
+
+2.2 Tokenizing text
+
+
+
 ### 03-04-2026
 
 1.3 Stages of building and using LLMs
