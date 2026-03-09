@@ -1,12 +1,18 @@
 # 2.2 Tokenizing Text
 import urllib.request
+from ai_shared_data import ensure_asset, get_asset_path
 
 print("2.2 Tokenizing text")
-url = ("https://raw.githubusercontent.com/rasbt/" 
-    "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
-    "the-verdict.txt")
-file_path = "the-verdict.txt"
-urllib.request.urlretrieve(url, file_path)
+#url = ("https://raw.githubusercontent.com/rasbt/" 
+#    "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
+#    "the-verdict.txt")
+#file_path = "the-verdict.txt"
+#urllib.request.urlretrieve(url, file_path)
+ensure_asset("the_verdict")
+ensure_asset("asv_clean_nt")
+file_path = get_asset_path("the_verdict")
+file_path = get_asset_path("asv_clean_nt")
+
 print()
 print("Listing 2.1 Reading in a short story as text sample into Python")
 with open(file_path, "r", encoding="utf-8") as f:
