@@ -6,7 +6,7 @@ This respoitory includes the code from my working through the book to build an L
 
 This project depends on the shared asset repository:
 
-https://github.com/<yourname>/ai_shared_data
+https://github.com/3141592/ai_shared_data
 
 Datasets and model assets are **not stored in this repository**.  
 They are managed through `ai_shared_data`.
