@@ -31,3 +31,17 @@ print(preprocessed[:30])
 
 print()
 print("2.3 Converting tokens into token IDs")
+print("Listing 2.2 Creating a vocabulary")
+all_words = sorted(set(preprocessed))
+vocab_size = len(all_words)
+print("Vocabulary size:", vocab_size)
+
+vocab = {token:integer for integer, token in enumerate(all_words)}
+print("Print the first 51 items in the vocabulary")
+for i, item in enumerate(vocab.items()):
+    print(item)
+    if i >= 50:
+        break
+
+
+

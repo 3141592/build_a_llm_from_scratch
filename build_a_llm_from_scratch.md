@@ -22,6 +22,14 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 03-13-2026
+
+- Completed 2.3 Converting tokens into token IDs
+- I now grasp that tokenzing, encoding, and decoding are straightforward processes.
+- This section lacks handling for unknown tokens (tokens not included in the vocabulary)
+  but it sounds like this is dealt with in the next sectio, 2.4.
+
+
 ### 03-06-2026
 
 Starting 2.3 Converting tokens into token IDs
