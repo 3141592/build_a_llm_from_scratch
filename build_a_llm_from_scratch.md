@@ -14,13 +14,20 @@ They are managed through `ai_shared_data`.
 Example setup:
 
 ```bash
-git clone https://github.com/<yourname>/ai_shared_data
+git clone https://github.com/3141592/ai_shared_data
 pip install -e ai_shared_data
 ```
 
 See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
+
+### 03-17-2026
+
+- Section 2.4 Adding special context tokens
+  - Added unk and <|endoftext|> tokens to the vocabulary and the tokenizer.
+  - Note: I am using the New Testament instead of The Verdict, so results will differ from the book.
+
 
 ### 03-13-2026
 
