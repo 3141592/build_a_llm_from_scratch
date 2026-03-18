@@ -22,6 +22,14 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 03-18-2026
+
+- Section 2.5 Byte pair encoding
+  - Saw that the BPE tokenizer breaks words into subwords but can put them back togther
+  - BPE works by traditional algorithms
+- Section 2.6 Data sampling with sliding window
+  - Stopped on p.36
+
 ### 03-17-2026
 
 - Section 2.4 Adding special context tokens
