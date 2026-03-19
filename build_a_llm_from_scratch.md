@@ -22,6 +22,12 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 03-19-2026
+
+- Section 2.6 Data sampling with sliding window
+  - The sliding window demonstrates how data to train a model to identify the next token is created.
+- NEXT Section 2.7 Creating token embeddings
+
 ### 03-18-2026
 
 - Section 2.5 Byte pair encoding
