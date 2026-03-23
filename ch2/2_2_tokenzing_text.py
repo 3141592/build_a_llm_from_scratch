@@ -1,6 +1,6 @@
 # 2.2 Tokenizing Text
 import urllib.request
-from ai_shared_data import ensure_asset, get_asset_path
+from ai_shared_utilities import ensure_asset, get_asset_path
 
 print("2.2 Tokenizing text")
 #url = ("https://raw.githubusercontent.com/rasbt/" 

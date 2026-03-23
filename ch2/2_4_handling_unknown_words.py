@@ -1,7 +1,7 @@
 # 2.2 Tokenizing Text
 import urllib.request
 import re
-from ai_shared_data import ensure_asset, get_asset_path
+from ai_shared_utilities import ensure_asset, get_asset_path
 
 print()
 print("Listing 2.3 Implementing a simple text tokenizer")

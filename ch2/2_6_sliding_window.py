@@ -1,7 +1,7 @@
 # 2.6 Data sampling with a sliding window
 import urllib.request
 import tiktoken
-from ai_shared_data import ensure_asset, get_asset_path
+from ai_shared_utilities import ensure_asset, get_asset_path
 
 print("2.6 Data sampling with a sliding window")
 #url = ("https://raw.githubusercontent.com/rasbt/" 
