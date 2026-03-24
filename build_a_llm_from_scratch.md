@@ -26,6 +26,7 @@ See that repository for dataset download and configuration instructions.
 
 - Section 2.7 Creating token embeddings
   - Created a small embedding.
+- Next 2.8 Encoding word positions
 
 
 ### 03-19-2026
