@@ -22,6 +22,12 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 03-24-2026
+
+- Section 2.7 Creating token embeddings
+  - Created a small embedding.
+
+
 ### 03-19-2026
 
 - Section 2.6 Data sampling with sliding window
