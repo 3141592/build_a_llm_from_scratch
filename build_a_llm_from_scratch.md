@@ -22,6 +22,10 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 03-30-2026
+
+- STARTED 2.8 Encoding word positions
+
 ### 03-24-2026
 
 - Section 2.7 Creating token embeddings
