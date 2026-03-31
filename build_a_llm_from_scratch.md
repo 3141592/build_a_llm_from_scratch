@@ -24,7 +24,9 @@ See that repository for dataset download and configuration instructions.
 
 ### 03-30-2026
 
-- STARTED 2.8 Encoding word positions
+- 2.8 Encoding word positions
+  - Created an input embedding.
+- Next: Ch. 3 Coding Attention Mechanisms
 
 ### 03-24-2026
 

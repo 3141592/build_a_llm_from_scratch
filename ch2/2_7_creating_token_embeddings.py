@@ -7,8 +7,6 @@ print("Start with four input tokens.")
 input_ids = torch.tensor([2, 3, 5, 1])
 print("Input token IDs:", input_ids)
 
-print("")
-print("Assume a 6 word vocabulry and an embedding dimension of 3.")
 vocab_size = 6
 output_dim = 3
 
