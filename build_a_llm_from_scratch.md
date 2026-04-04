@@ -22,6 +22,12 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 04-03-2026
+
+- Ch. 3 Coding Attention Mechanisms
+  - Read up to 3.3.1 Simple self-attention mechanism
+  - WIP converting 3.3.1 context vector calculation to a naive loop imlementation.
+
 ### 03-30-2026
 
 - 2.8 Encoding word positions
