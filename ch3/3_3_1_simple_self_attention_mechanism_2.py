@@ -10,23 +10,23 @@ inputs = torch.tensor(
      [0.77, 0.25, 0.10], # one         (x^5)
      [0.05, 0.80, 0.55]] # step        (x^6)
 )
-inputs_2 = inputs
 
 print()
 print("Calculate intermediate attention scores")
-attn_scores = torch.empty(inputs.shape)
-context_vec = torch.zeros(inputs[0].shape)
+attn_scores = torch.empty(inputs.shape[0])
+context_vec = torch.zeros(inputs.shape)
+print("attn_scores.shape:", attn_scores.shape)
+print("inputs.shape:", inputs.shape)
 
-for q in enumerate(inputs):
-    print()
-    index = 0
-    for x in enumerate(inputs_2):
-        attn_scores = torch.dot(x[1], q[1])
-        #print("Attention scores: ", attn_scores)
-        attn_weights = torch.softmax(attn_scores, dim=0)
-        #print(f"Attention weights token: {q}, weights: {attn_weights}")
-        context_vec[index] += attn_weights * x
-        index += 1
+for i, q in enumerate(inputs):
+    for j, x in enumerate(inputs):
+        attn_scores[j] = torch.dot(x, q)
+    attn_weights = torch.softmax(attn_scores, dim=0)
+    print("query index:", i)
+    print("attn_weights:", attn_weights)
+    print("sum of weights:", attn_weights.sum())
+    context_vec[i] = attn_weights[i] * inputs[i,:]
 
+print("Context vector:")
 print(context_vec) 
 

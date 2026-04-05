@@ -22,6 +22,11 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 04-04-2026
+
+- Ch. 3 Coding Attention Mechanisms
+  - WIP converting 3.3.1 context vector calculation to a naive loop imlementation.
+
 ### 04-03-2026
 
 - Ch. 3 Coding Attention Mechanisms
