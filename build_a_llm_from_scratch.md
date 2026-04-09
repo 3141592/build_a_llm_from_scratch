@@ -28,7 +28,7 @@ See that repository for dataset download and configuration instructions.
   - Converted 3.3.1 context vector calculation for one row to entire input.
   - input matrix => attention scores => attention weights => context vectors
   - 3.3.2 Computing attention weights for all input tokens.
-  - NEXT 3.4 Implementing self-attention with trainable weights
+  - NEXT 3.4.1 Computing the attention weights step by step
 
 
 ### 04-04-2026

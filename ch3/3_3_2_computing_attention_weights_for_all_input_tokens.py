@@ -22,16 +22,16 @@ print()
 print("Calculate attention scores for each input token with respect to the query token")
 inputs_transpose = torch.transpose(inputs, 0, 1)
 attn_scores = torch.matmul(inputs, inputs_transpose)
-print("attn_scores:", attn_scores)
+print("attn_scores:\n", attn_scores)
 
 print()
 print("Calculate the attention weights by nromalizing:")
 attn_weights = torch.softmax(attn_scores, dim=1)
-print("attn_weights:", attn_weights)
+print("attn_weights:\n", attn_weights)
 
 print()
 print("Calculate the context vectors")
 context_vector = torch.matmul(attn_weights, inputs)
-print("context_vector:", context_vector)
+print("context_vector:\n", context_vector)
 
 
