@@ -18,7 +18,10 @@ query = inputs[1]
 attn_scores_2 = torch.empty(inputs.shape[0])
 for i, x_i in enumerate(inputs):
     attn_scores_2[i] = torch.dot(x_i, query)
-print(attn_scores_2)
+
+print()
+print("attn_scores_2.shape: ", attn_scores_2.shape)
+print("attn_scores_2: ", attn_scores_2)
 
 print()
 print("Normalize each of the attention scores")

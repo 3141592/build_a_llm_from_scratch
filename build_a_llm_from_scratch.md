@@ -22,10 +22,20 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 04-09-2026
+
+- Ch. 3 Coding Attention Mechanisms
+  - Converted 3.3.1 context vector calculation for one row to entire input.
+  - input matrix => attention scores => attention weights => context vectors
+  - 3.3.2 Computing attention weights for all input tokens.
+  - NEXT 3.4 Implementing self-attention with trainable weights
+
+
 ### 04-04-2026
 
 - Ch. 3 Coding Attention Mechanisms
   - WIP converting 3.3.1 context vector calculation to a naive loop imlementation.
+
 
 ### 04-03-2026
 

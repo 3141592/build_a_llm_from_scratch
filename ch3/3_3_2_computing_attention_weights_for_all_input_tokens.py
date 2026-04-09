@@ -1,7 +1,7 @@
 import torch
 
 print()
-print("3.3.1 A simple self-attention mechanism without trainable weights")
+print("3.3.2 Computing attention weights for all input tokens")
 inputs = torch.tensor(
     [[0.43, 0.15, 0.89], # Your        (x^1)
      [0.55, 0.87, 0.66], # journey     (x^2)
