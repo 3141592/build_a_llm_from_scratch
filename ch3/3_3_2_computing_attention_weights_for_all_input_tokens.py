@@ -34,4 +34,8 @@ print("Calculate the context vectors")
 context_vector = torch.matmul(attn_weights, inputs)
 print("context_vector:\n", context_vector)
 
-
+print()
+print("Generalize computation to all attention scores via matrix multiplication.")
+# All attention scores for given query
+attn_scores_2 = query_2 @ keys.T
+print("attn_scores_2: ", attn_scores_2)

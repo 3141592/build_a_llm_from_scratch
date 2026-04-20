@@ -22,6 +22,14 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 04-20-2026
+
+- Ch. 3 Coding Attention Mechanisms
+  - Review 3.3.1 
+  - DONE 3.4.1 Computing the attention weights step by step
+  - NEXT 3.4.2 Implementing a compact self-attention Python class
+
+
 ### 04-09-2026
 
 - Ch. 3 Coding Attention Mechanisms
