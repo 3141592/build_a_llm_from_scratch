@@ -25,7 +25,7 @@ attn_scores = torch.matmul(inputs, inputs_transpose)
 print("attn_scores:", attn_scores)
 
 print()
-print("Calculate the attention weights by nromalizing:")
+print("Calculate the attention weights by normalizing:")
 attn_weights = torch.softmax(attn_scores, dim=1)
 print("attn_weights:", attn_weights)
 
