@@ -9,13 +9,21 @@
     "source=/home/roy/src/ai_shared_utilities,target=/workspaces/ai_shared_utilities,type=bind",
     "source=/home/roy/src/data,target=/workspaces/data,type=bind"
   ],
-  "postCreateCommand": "pip install -e /workspaces/ai_shared_utilities",
+  "postCreateCommand": ".devcontainer/post_create.sh",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "tmux-gnn": {
+            "path": "/workspaces/build_a_llm_from_scratch/.devcontainer/tmux-gnn"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "tmux-gnn"
+      } 
     }
   }
 }

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ -n "${TMUX:-}" ]; then
+  exec bash
+fi
+
+SESSION="gnn"
+CONF=".tmux/tmux.conf"
+
+cd /workspaces/build_a_llm_from_scratch
+
+if tmux has-session -t "$SESSION" 2>/dev/null; then
+  tmux attach -t "$SESSION"
+  exit 0
+fi
+
+tmux -f "$CONF" new-session -d -s "$SESSION" -n code
+tmux split-window -v -p 25 -t "$SESSION:code"
+tmux select-pane -t "$SESSION:code.0"
+
+tmux attach -t "$SESSION"
