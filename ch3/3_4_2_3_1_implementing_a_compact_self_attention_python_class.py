@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 print()
-print("3.4.2 Implementing a compact self-attention Python class")
+print("3.4.2 Implementing a compact self-attention Python class Listing 3.1")
 inputs = torch.tensor(
     [[0.43, 0.15, 0.89], # Your        (x^1)
      [0.55, 0.87, 0.66], # journey     (x^2)

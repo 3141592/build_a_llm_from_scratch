@@ -7,3 +7,6 @@ apt-get update
 apt-get install -y tmux
 
 pip install -e /workspaces/ai_shared_utilities
+pip install black
+
+ln -s /usr/bin/python3 /usr/bin/python
