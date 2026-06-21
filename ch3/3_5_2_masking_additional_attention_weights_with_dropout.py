@@ -49,31 +49,8 @@ attn_scores = queries @ keys.T
 attn_weights = torch.softmax(attn_scores / keys.shape[-1]**0.5, dim=-1)
 print(f"attn_weights:\n{attn_weights}")
 
-# Create a mask where the values above the diagonal are zero
-context_length = attn_scores.shape[0]
-mask_simple = torch.tril(torch.ones(context_length, context_length))
-print()
-print(f"mask_simple:\n{mask_simple}")
-
-# Zero out the values above the diagonal
-masked_simple = attn_weights * mask_simple
-print()
-print(f"masked_simple:\n{masked_simple}")
-
-# Renormalize the masked attention weights
-row_sums = masked_simple.sum(dim=-1, keepdim=True)
-masked_simple_norm = masked_simple / row_sums
-print()
-print(f"masked_simple_norm:\n{masked_simple_norm}")
-
-# Try using torch.softmax
-masked_simple_norm_alt = torch.softmax(masked_simple / keys.shape[-1]**0.5, dim=-1)
-print()
-print(f"masked_simple_norm_alt:\n{masked_simple_norm_alt}")
-print("Conclusion: The softmax function does not work on the masked matrix")
-print("Because the zeros are consideded values to normalize.")
-
 # Use masking with negative infinity values
+context_length = attn_scores.shape[0]
 mask = torch.triu(torch.ones(context_length, context_length), diagonal=1)
 masked = attn_scores.masked_fill(mask.bool(), -torch.inf)
 print()
@@ -85,5 +62,44 @@ print(f"masked:\n{masked}")
 attn_weights = torch.softmax(masked / keys.shape[-1]**0.5, dim=1)
 print()
 print(f"attn_weights:\n{attn_weights}")
+print()
+
+print("3.5.2 Masking additional attention weights with dropout")
+torch.manual_seed(123)
+# We choose a dropout rate of 50%
+dropout = torch.nn.Dropout(0.5)
+example = torch.ones(6, 6)
+print(f"example:\n{example}")
+print(f"dropout(example):\n{dropout(example)}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
