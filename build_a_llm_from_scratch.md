@@ -22,6 +22,12 @@ See that repository for dataset download and configuration instructions.
 
 ## Understanding large language models
 
+### 10-17-2026
+
+- Ch. 3 Coding Attention Mechanisms
+  - DONE 3.5.2 Masking additional attention weights with dropout
+  - WIP 3.5.3 Implementing a compact causal attention class
+
 ### 04-20-2026
 
 - Ch. 3 Coding Attention Mechanisms
