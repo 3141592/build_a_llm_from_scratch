@@ -51,6 +51,8 @@ print(f"attn_weights:\n{attn_weights}")
 
 # Create a mask where the values above the diagonal are zero
 context_length = attn_scores.shape[0]
+print()
+print(f"context_length:{context_length}")
 mask_simple = torch.tril(torch.ones(context_length, context_length))
 print()
 print(f"mask_simple:\n{mask_simple}")

@@ -32,9 +32,9 @@ class SimpleTokenizerV1:
         return text
 
 ensure_asset("the_verdict")
-ensure_asset("asv_clean_nt")
+ensure_asset("asv_raw")
 file_path = get_asset_path("the_verdict")
-file_path = get_asset_path("asv_clean_nt")
+file_path = get_asset_path("asv_raw")
 
 print()
 print("Listing 2.1 Reading in a short story as text sample into Python")

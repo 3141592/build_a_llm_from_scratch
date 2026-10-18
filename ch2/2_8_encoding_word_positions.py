@@ -55,8 +55,8 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
     return dataloader
 
 print("2.6 Data sampling with a sliding window")
-ensure_asset("asv_clean_nt")
-file_path = get_asset_path("asv_clean_nt")
+ensure_asset("asv_raw")
+file_path = get_asset_path("asv_raw")
 
 print()
 with open(file_path, "r", encoding="utf-8") as f:

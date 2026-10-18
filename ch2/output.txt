@@ -1,0 +1,68 @@
+2.2 Tokenizing text
+
+Listing 2.1 Reading in a short story as text sample into Python
+Total number of character:  4563817
+﻿ASV
+American Standard Version
+Genesis 1:1	In the beginning God created the heavens and the earth.
+
+
+Use Python's regular expression module to split the text into tokens
+Number of tokens: 1039287
+['\ufeffASV', 'American', 'Standard', 'Version', 'Genesis', '1', ':', '1', 'In', 'the', 'beginning', 'God', 'created', 'the', 'heavens', 'and', 'the', 'earth', '.', 'Genesis', '1', ':', '2', 'And', 'the', 'earth', 'was', 'waste', 'and', 'void']
+
+2.3 Converting tokens into token IDs
+Listing 2.2 Creating a vocabulary
+Vocabulary size: 14205
+Print the first 51 items in the vocabulary
+('!', 0)
+('(', 1)
+(')', 2)
+(',', 3)
+('.', 4)
+('1', 5)
+('10', 6)
+('100', 7)
+('101', 8)
+('102', 9)
+('103', 10)
+('104', 11)
+('105', 12)
+('106', 13)
+('107', 14)
+('108', 15)
+('109', 16)
+('11', 17)
+('110', 18)
+('111', 19)
+('112', 20)
+('113', 21)
+('114', 22)
+('115', 23)
+('116', 24)
+('117', 25)
+('118', 26)
+('119', 27)
+('12', 28)
+('120', 29)
+('121', 30)
+('122', 31)
+('123', 32)
+('124', 33)
+('125', 34)
+('126', 35)
+('127', 36)
+('128', 37)
+('129', 38)
+('13', 39)
+('130', 40)
+('131', 41)
+('132', 42)
+('133', 43)
+('134', 44)
+('135', 45)
+('136', 46)
+('137', 47)
+('138', 48)
+('139', 49)
+('14', 50)

@@ -10,10 +10,10 @@ print("2.6 Data sampling with a sliding window")
 #file_path = "the-verdict.txt"
 #urllib.request.urlretrieve(url, file_path)
 ensure_asset("the_verdict")
-ensure_asset("asv_clean_nt")
+ensure_asset("asv_raw")
 ensure_asset("john")
 file_path = get_asset_path("the_verdict")
-file_path = get_asset_path("asv_clean_nt")
+file_path = get_asset_path("asv_raw")
 #file_path = get_asset_path("john")
 
 print()

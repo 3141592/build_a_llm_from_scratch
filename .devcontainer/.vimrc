@@ -26,5 +26,11 @@ augroup remember_cursor
     \ endif
 augroup END
 
+" Restore last cursor position and center it on screen
+augroup restore_cursor
+    autocmd!
+    autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | execute "normal! g`\"zz" | endif
+augroup END
+
 " Format Python file with Black
 "nnoremap <leader>f :w<CR>:!black %<CR>:e<CR>
